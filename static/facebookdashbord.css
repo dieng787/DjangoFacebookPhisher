@@ -1,0 +1,184 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #ffeb3b;
+	text-align: center;
+}
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0
+}
+table{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	background: white;
+	text-align: center;
+	border-collapse: collapse;
+	border-radius: 12px ;
+	box-shadow: 1px 2px 11px 0px #999999;
+	margin-top:20px
+}
+
+th, td{
+	padding: 12px 15px;
+}
+
+th{
+	background: #009688;
+	color: #fafafa;
+}
+
+tr:nth-child(odd){
+	background-color: #eeeeee;
+	color: #009688;
+
+}
+
+tr{
+	font-weight: bold;
+}
+
+.m{
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.e{
+	width: 20%;
+	white-space: nowrap;
+}
+
+table button{
+	padding: 4px;
+	background-color:  #009688;
+	outline: none;
+	border: 1px solid #009688;
+	cursor: pointer;
+	color: white;
+	border-radius: 3px;
+	transition: .5s
+
+}
+
+table button:hover{
+	background: white;
+	color: #009688;
+	transition: .5s
+}
+
+
+
+
+.dsearch{
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px 10px 20px;
+	box-shadow: 0px 0px 4px 0px #909090
+}
+
+
+
+
+
+
+.dsearch form{
+	display: flex;
+	align-items: center;
+	width: 80%; 
+}
+
+.dsearch form input{
+	width: 100%;
+	height: 30px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	background: #00000012;
+	padding: 5px
+}
+
+.dsearch form button{
+	height: 40px;
+	border: none;
+	margin: 3px;
+	padding: 3px;
+	cursor: pointer;
+	border-radius: 2px
+}
+
+
+
+
+h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+table .button{
+	padding: 4px;
+	background-color:  #3f51b5;
+	outline: none;
+	border: 1px solid #3f51b5;
+	cursor: pointer;
+	color: white;
+	border-radius: 3px;
+	transition: .5s
+
+}
+
+
+table .button:hover{
+	color: #3f51b5;
+	border: 1px solid #3f51b5;
+
+
+}
+
+
+.nod a{
+	display: flex;
+	text-decoration: none;
+
+}
+
+.nod a p{
+	background: #009688;
+	color: white;
+	border-radius: 50%;
+	padding: 5px;
+	align-self: center;
+	margin: 0px 0px -11px -15px
+}
+
+
+.nod{
+	align-self: center;
+	display: flex;
+	align-items: center;
+}
+
+#log{
+	margin: 0px 0px 0px 20px
+}
+
+#d{
+	font-weight: bold;
+	background: #009688;
+	color: white;
+	padding: 5px;
+	border-radius: 3px;
+	border: 2px solid #009688
+}
+
+#d:hover{
+	color: #009688;
+	background: white;
+	transition: .5s
+}
