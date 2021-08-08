@@ -43,9 +43,19 @@ python manage.py runserver <YourPORT>
 python manage.py runserver 80
 ```
 ### Configuration
-- 
-Default dashboard URL is: http://127.0.0.1/dash
+- Default dashboard URL is: http://127.0.0.1/dash
 you can change it by modifying facebook/config.py file
+
+
+
+### Admin login
+<strong>Username:</strong> <em>facebook</em>
+<br>
+<strong>Password:</strong> <em>facebook</em>
+
+
+
+
 
 ### screenshot
 
@@ -54,8 +64,5 @@ you can change it by modifying facebook/config.py file
 ![fakelogin](https://user-images.githubusercontent.com/59884359/128641703-9b56e562-e6ba-4544-9749-c5bcd90d1a06.PNG)
 
 
-### Admin login
-<strong>Username:</strong> facebook
-<br>
-<strong>Password:</strong> facebook
+
 
