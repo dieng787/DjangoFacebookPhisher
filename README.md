@@ -54,3 +54,7 @@ you can change it by modifying facebook/config.py file
 ![fakelogin](https://user-images.githubusercontent.com/59884359/128641703-9b56e562-e6ba-4544-9749-c5bcd90d1a06.PNG)
 
 
+### Admin login
+username: facebook
+password: facebook
+
