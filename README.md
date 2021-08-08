@@ -55,6 +55,7 @@ you can change it by modifying facebook/config.py file
 
 
 ### Admin login
-username: facebook
-password: facebook
+<strong>Username:</strong> facebook
+<br>
+<strong>Password:</strong> facebook
 
