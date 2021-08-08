@@ -21,7 +21,13 @@ python manage.py migrate
 ```
 ### Start the server
 
-
+``` 
+python manage.py runserver <YourPORT> 
+```
+- Example 
+``` 
+python manage.py runserver 80
+```
 
 
 ![dash](https://user-images.githubusercontent.com/59884359/128641010-dae25805-91ff-47be-8b97-36df1a6349f7.PNG)
